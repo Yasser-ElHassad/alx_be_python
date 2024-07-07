@@ -10,13 +10,13 @@ def main():
     while True:
         display_menu()
         choice = input("Enter your choice: ")
-
+        item = input('Enter the item to add: ')
         if choice == '1':
             # Prompt for and add an item
-            shopping_list.append(input())
+            shopping_list.append(item)
         elif choice == '2':
             # Prompt for and remove an item
-            shopping_list.remove(input())
+            shopping_list.remove(item)
         elif choice == '3':
             # Display the shopping list
             print(shopping_list)
