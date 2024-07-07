@@ -1,8 +1,8 @@
 import datetime
-# print(dir(datetime))
+
 current_date  = datetime.datetime.now()
-def display_current_datetime():
-    
+
+def display_current_datetime():  
     print(f'Current date and time: {str(current_date)[:-7]}')
 
 def calculate_future_date():
@@ -11,5 +11,4 @@ def calculate_future_date():
     print(f'Future date: {str(future_date)[:11]}')
 
 
-display_current_datetime()
-calculate_future_date()
+
