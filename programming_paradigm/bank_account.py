@@ -5,7 +5,6 @@ import re
 class BankAccount:
     def __init__(self, amount):
         self.account_balance = 0
-        self.amount = amount 
         
 
     def deposit(self,amount):
