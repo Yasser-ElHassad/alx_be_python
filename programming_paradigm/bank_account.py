@@ -1,10 +1,6 @@
-import unittest 
-import re
-
-
 class BankAccount:
-    def __init__(self, amount):
-        self.account_balance = 0
+    def __init__(self, account_balance):
+        self.account_balance = account_balance
         
 
     def deposit(self,amount):
