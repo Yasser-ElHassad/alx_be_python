@@ -1,6 +1,11 @@
+import unittest 
+import re
+
+
 class BankAccount:
-    def __init__(self):
+    def __init__(self, amount):
         self.account_balance = 0
+        self.amount = amount 
         
 
     def deposit(self,amount):
@@ -10,10 +15,12 @@ class BankAccount:
     def withdraw(self, amount):
         if amount <= self.account_balance:
             self.account_balance -= amount
-            return f'Withdrew: ${self.account_balance}'
+            return f'Withdrew: ${amount}'
         else:
-            return f'Insufficient funds'
-    def display_balance(self):
-        print(f"Current Balance: ${self.account_balance}")
+            return f'Insufficient funds.'
+        
+    def display_balance(self):  
+         return f"Current Balance: ${self.account_balance}"
+
 
 
