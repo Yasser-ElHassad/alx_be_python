@@ -13,7 +13,7 @@ class BankAccount:
         return f'Deposited: ${self.account_balance}'
     
     def withdraw(self, amount):
-        if amount <= self.account_balance:
+        if amount < self.account_balance:
             self.account_balance -= amount
             return f'Withdrew: ${amount}'
         else:
