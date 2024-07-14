@@ -5,13 +5,16 @@ class Book:
         self.author = author
         _is_checked_out = 0
 
-    def __str__(self):
+    def Chekcout(self):
         if (self.title,self.author) in self.books:
             return (self.title, self.author)
+    
+    def ReturnBook(self):
+        pass
         
 
     
-class Library(Book):
+class Library():
     def __init__(self):
         self._books = []
     def add_book(self):
